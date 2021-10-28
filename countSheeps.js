@@ -7,7 +7,8 @@ const arr = [true,  true,  true,  false,
     true,  false, false, true ,
     true,  true,  true,  true ,
     false, false, true,  true]
-  
+
+// My solution:    
 let totalSheeps = 0;
     
 function countSheeps(arr) {
@@ -19,3 +20,8 @@ function countSheeps(arr) {
   return `There are ${totalSheeps} sheeps in total`;
 }
 countSheeps(arr);
+
+// Better solution:
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length;
+}
