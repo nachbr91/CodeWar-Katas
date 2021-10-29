@@ -17,7 +17,7 @@ function countSheeps(arr) {
       totalSheeps++;
     }
   }
-  return `There are ${totalSheeps} sheeps in total`;
+  return totalSheeps;
 }
 countSheeps(arr);
 
